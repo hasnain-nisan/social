@@ -74,9 +74,21 @@
                         </a>
 
                         <a class="btn mb-2" href="{{ url('login/facebook') }}"
-                            style="background: #1E9DEA; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
+                            style="background: #92beda; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
                             <i class="fab fa-facebook mr-3"></i>
                             Login with Facebook
+                        </a>
+
+                        <a class="btn mb-2" href="{{ url('login/github') }}"
+                            style="background: #131516; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
+                            <i class="fab fa-github mr-3"></i>
+                            Login with Github
+                        </a>
+
+                        <a class="btn mb-2" href="{{ url('login/gmail') }}"
+                            style="background: #ffde96; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
+                            <i class="fab fa-google mr-3"></i>
+                            Login with Google
                         </a>
                     </div>
                 </div>

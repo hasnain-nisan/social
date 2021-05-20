@@ -19,11 +19,11 @@
                     </div>
                     <div class="row">
                         <h3>profile picture:</h3>
-                        <img src="{{ auth()->user()->profile_picture }}" alt="" srcset="">
+                        <img src="{{ asset('img/'. auth()->user()->profile_picture) }}" alt="" srcset="">
                     </div>
                     <div class="row">
                         <h3>Cover photo:</h3>
-                        <img src="{{ auth()->user()->cover_photo }}" alt="" srcset="" class="img-fluid">
+                        <img src="{{ asset('img/'. auth()->user()->cover_photo) }}" alt="" srcset="" class="img-fluid">
                     </div>
                 </div>
             </div>

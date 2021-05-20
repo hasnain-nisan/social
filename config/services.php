@@ -42,4 +42,16 @@ return [
         'redirect' => 'https://testproject.atiar.info/callback/facebook',
     ],
 
+    'github' => [
+        'client_id' => env('GITHUB_ID'), 
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect' => 'http://127.0.0.1:8002/callback/github',
+    ],
+
+    'google' => [
+        'client_id' => env('GMAIL_ID'), 
+        'client_secret' => env('GMAIL_SECRET'),
+        'redirect' => 'http://127.0.0.1:8002/callback/gmail',
+    ],
+
 ];
