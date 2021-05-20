@@ -90,6 +90,12 @@
                             <i class="fab fa-google mr-3"></i>
                             Login with Google
                         </a>
+
+                        <a class="btn mb-2" href="{{ url('login/reddit') }}"
+                            style="background: #f75b13; padding: 10px; width: 100%; text-align: center; display: block; border-radius:4px; color: #ffffff;">
+                            <i class="fab fa-reddit mr-3"></i>
+                            Login with Reddit
+                        </a>
                     </div>
                 </div>
             </div>

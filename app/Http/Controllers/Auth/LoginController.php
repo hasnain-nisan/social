@@ -119,6 +119,25 @@ class LoginController extends Controller
        return redirect($this->redirectTo);
    }
 
+   public function redirectToReddit()
+   {
+    return Socialite::driver('reddit')->redirect();
+   }
+
+   public function handleRedditCallback()
+   {
+       try {
+           $user = Socialite::driver('reddit')->user();
+           dd($user);
+       } catch (Exception $e) {
+           return redirect('/login');
+       }
+
+       $authUser = $this->findOrCreateUser($user, 'reddit');
+       Auth::login($authUser, true);
+       return redirect($this->redirectTo);
+   }
+
 
    public function findOrCreateUser($providerUser, $provider)
    {

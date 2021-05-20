@@ -54,4 +54,10 @@ return [
         'redirect' => 'http://127.0.0.1:8002/callback/gmail',
     ],
 
+    'reddit' => [    
+        'client_id' => env('REDDIT_CLIENT_ID'),  
+        'client_secret' => env('REDDIT_CLIENT_SECRET'),  
+        'redirect' => 'http://127.0.0.1:8002/callback/reddit' 
+      ],
+
 ];

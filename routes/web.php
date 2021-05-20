@@ -42,6 +42,9 @@ Route::get('callback/github',[App\Http\Controllers\Auth\LoginController::class, 
 Route::get('login/gmail', [App\Http\Controllers\Auth\LoginController::class, 'redirectToGmail']);
 Route::get('callback/gmail',[App\Http\Controllers\Auth\LoginController::class, 'handleGmailCallback']);
 
+Route::get('login/reddit', [App\Http\Controllers\Auth\LoginController::class, 'redirectToReddit']);
+Route::get('callback/reddit',[App\Http\Controllers\Auth\LoginController::class, 'handleRedditCallback']);
+
 Route::get('/fb', function() {
     $url = 'https://graph.facebook.com/v3.3/4023389834405889/picture?width=1920&access_token=EABNFJjr0gZCMBAGAQlsV2s1RB6R06NmyWcQyPX5mKVq2B7AeycpZAxPjFCIq2wLNmXSQfic14XwKUOs4OU06XDoRR8wpuZAPbf8mBEfl7JZBwljyX93XAGkQKbmnLxl6OqQeveBUh9uQxtPRDtOTEZBvcp3sdHdycDucfINpkXAZDZD';
     $image = file_get_contents($url);
